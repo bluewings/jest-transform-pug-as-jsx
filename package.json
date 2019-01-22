@@ -1,0 +1,62 @@
+{
+  "name": "jest-transform-pug-as-jsx",
+  "version": "1.0.0",
+  "main": "dist/jest-transform-pug-as-jsx.cjs.js",
+  "module": "dist/jest-transform-pug-as-jsx.es.js",
+  "jsnext:main": "dist/jest-transform-pug-as-jsx.es.js",
+  "description": "utils for pug-as-jsx",
+  "author": {
+    "name": "Sung Won Cha",
+    "email": "mygenie3@naver.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bluewings/jest-transform-pug-as-jsx"
+  },
+  "dependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.3.0",
+    "@babel/preset-react": "^7.0.0",
+    "pug-as-jsx-utils": "^1.0.19"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "babel-eslint": "^10.0.1",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.4",
+    "jest-cli": "^23.6.0",
+    "jest-enzyme": "^7.0.1",
+    "prettier": "^1.16.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "rollup": "^1.1.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0"
+  },
+  "scripts": {
+    "test": "jest --no-cache --env=jsdom",
+    "pretest": "npm run build",
+    "build": "rollup -c",
+    "prebuild": "rm -rf dist/*",
+    "prepublishOnly": "npm test",
+    "prepare": "npm run build"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "files": [
+    "src",
+    "dist",
+    "README.md"
+  ],
+  "license": "MIT"
+}
