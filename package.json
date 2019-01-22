@@ -1,6 +1,6 @@
 {
   "name": "jest-transform-pug-as-jsx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/jest-transform-pug-as-jsx.cjs.js",
   "module": "dist/jest-transform-pug-as-jsx.es.js",
   "jsnext:main": "dist/jest-transform-pug-as-jsx.es.js",
@@ -17,7 +17,7 @@
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.3.0",
     "@babel/preset-react": "^7.0.0",
-    "pug-as-jsx-utils": "^1.0.19"
+    "pug-as-jsx-utils": "^1.0.20"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.2.0",
