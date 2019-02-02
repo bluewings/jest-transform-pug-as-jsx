@@ -1,8 +1,13 @@
 
 module.exports = {
-  setupTestFrameworkScriptFile: './node_modules/jest-enzyme/lib/index.js',
+  // setupTestFrameworkScriptFile: './node_modules/jest-enzyme/lib/index.js',
+  setupFilesAfterEnv: [
+    './node_modules/jest-enzyme/lib/index.js',
+  ],
   testMatch: [
+    '<rootDir>/(src|test)/__tests__/**/*.js?(x)',
     '<rootDir>/(src|test)/**/__tests__/**/*.js?(x)',
+    '<rootDir>/(src|test)/?(*.)(spec|test).js?(x)',
     '<rootDir>/(src|test)/**/?(*.)(spec|test).js?(x)',
   ],
   transformIgnorePatterns: [
